@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alertas</title>
+</head>
+<body>
+    <h1>Requisições Maliciosas Detectadas</h1>
+    {% if alertas %}
+    <table border="1">
+        <tr>
+            <th>IP</th>
+            <th>Data/Hora</th>
+            <th>Requisição</th>
+            <th>User-Agent</th>
+        </tr>
+        {% for alerta in alertas %}
+        <tr>
+            <td>{{ alerta.ip }}</td>
+            <td>{{ alerta.time }}</td>
+            <td>{{ alerta.request }}</td>
+            <td>{{ alerta.user_agent }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>Nenhum alerta encontrado.</p>
+    {% endif %}
+</body>
+</html>
