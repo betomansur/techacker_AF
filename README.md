@@ -4,7 +4,7 @@
 **Grupo:**  
 - Alberto Mansur  
 - Bruno Falcão  
-- Fernanda Pereira  
+- Fernanda de Oliveira Pereira
 
 ---
 
